@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(200deg, #0a5df7, #0af72a);
+    color: #fff;
+    font-family: 'New Tegomin', serif;
+}
+header{
+    font-size: 2.1rem;
+}
+
+header,form{
+    min-height: 15vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+form input, form button{
+    padding: 0.8rem;
+    outline: none;
+    border: none;
+    font-size: 1.3rem ;
+    font-family: 'New Tegomin', serif;
+}
+
+.todo-container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 25%;
+    list-style: none;
+}
+
+.todo{
+    display: flex;
+    margin:0.5rem;
+    font-size: 1.5rem;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+}
+
