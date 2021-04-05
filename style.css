@@ -28,6 +28,17 @@ form input, form button{
     border: none;
     font-size: 1.3rem ;
     font-family: 'New Tegomin', serif;
+    font-weight:650;
+    border-radius: 3px;
+}
+
+form button{
+    background-color:#0a5df7;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color:#0af72a;
 }
 
 .todo-container{
@@ -37,16 +48,43 @@ form input, form button{
 }
 
 .todo-list{
-    min-width: 25%;
+    min-width: 35%;
     list-style: none;
 }
 
 .todo{
     display: flex;
+    align-items: center;
+    justify-content:space-evenly;
     margin:0.5rem;
     font-size: 1.5rem;
-    align-items: center;
     background-color: #fff;
     color: #000;
 }
 
+.todo-items{
+    flex:1;
+    margin:0 0.3rem;
+    padding:0.3rem;
+    font-weight: 600;
+    
+}
+
+.doneButton,.trashButton{
+    background-color:  #0a5df7;
+    padding:1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.trashButton:hover,.doneButton:hover{
+    background-color:#0af72a;
+}
+.fas{
+    pointer-events: none;
+}
+
+.finished{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
