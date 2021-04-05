@@ -41,12 +41,15 @@ function addtodo(event){
     function audit(ev){
         const item = ev.target;
         if(item.classList[0] === 'trashButton'){
-            item.parentElement.remove();
+            item.parentElement.classList.add("trashed");
+            item.parentElement.addEventListener("transitionend",function(){
+                item.parentElement.remove();
+            })
         }
 
         if(item.classList[0] === 'doneButton'){
             const finished = item.parentElement;
-            finished.classList.toggle('finished')
+            finished.classList.add('finished')
             alert(`Congratulations you finished it!!!`)
         }
     }
